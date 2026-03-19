@@ -57,9 +57,9 @@ export const TransparentImage: React.FC<TransparentImageProps> = ({
     <div className={className}>
       <canvas ref={canvasRef} style={{ display: 'none' }} />
       {processedSrc ? (
-        <img src={processedSrc} alt={alt} className="w-full h-full object-contain" referrerPolicy="no-referrer" />
+        <img src={processedSrc} alt={alt} className="w-full h-full object-contain" />
       ) : (
-        <img src={src} alt={alt} className="w-full h-full object-contain opacity-50" referrerPolicy="no-referrer" />
+        <img src={src} alt={alt} className="w-full h-full object-contain opacity-50" />
       )}
     </div>
   );

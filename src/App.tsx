@@ -168,8 +168,7 @@ const Home = () => {
                 <img 
                   src={heroImg} 
                   alt="Lexora Strategic Meeting" 
-                  className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                  referrerPolicy="no-referrer"
+                  className="w-full h-[600px] object-cover"
                 />
               </div>
               <div className="absolute -bottom-10 -left-10 bg-paper p-8 shadow-xl hidden md:block border border-ocre/10">
@@ -230,8 +229,7 @@ const Home = () => {
               <img 
                 src={expertisesImg} 
                 alt="Expertises" 
-                className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                referrerPolicy="no-referrer"
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
           </div>
@@ -324,7 +322,6 @@ const Home = () => {
                   src={ambitionImg} 
                   alt="Lexora Ambition" 
                   className="w-full h-[500px] object-cover"
-                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-ocre flex items-center justify-center rounded-full rotate-12">
