@@ -20,6 +20,10 @@ import { Logo } from './components/Logo';
 import { ContactForm } from './components/ContactForm';
 import { ExpertiseDetail } from './pages/ExpertiseDetail';
 
+import heroImg from './assets/hero.jpg';
+import expertisesImg from './assets/expertises.jpg';
+import ambitionImg from './assets/ambition.jpg';
+
 const EXPERTISES = [
   {
     num: "01",
@@ -162,7 +166,7 @@ const Home = () => {
             >
               <div className="luxury-border">
                 <img 
-                  src="/hero.jpg" 
+                  src={heroImg} 
                   alt="Lexora Strategic Meeting" 
                   className="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-700"
                   referrerPolicy="no-referrer"
@@ -224,7 +228,7 @@ const Home = () => {
             </div>
             <div className="relative h-full min-h-[400px]">
               <img 
-                src="/expertises.jpg" 
+                src={expertisesImg} 
                 alt="Expertises" 
                 className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                 referrerPolicy="no-referrer"
@@ -317,7 +321,7 @@ const Home = () => {
             <div className="relative">
               <div className="luxury-border !p-0">
                 <img 
-                  src="/ambition.jpg" 
+                  src={ambitionImg} 
                   alt="Lexora Ambition" 
                   className="w-full h-[500px] object-cover"
                   referrerPolicy="no-referrer"

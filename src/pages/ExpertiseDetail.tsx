@@ -4,11 +4,15 @@ import { motion } from 'motion/react';
 import { ArrowLeft, Shield, Zap, Globe, CheckCircle2 } from 'lucide-react';
 import { Logo } from '../components/Logo';
 
+import heroImg from '../assets/hero.jpg';
+import expertisesImg from '../assets/expertises.jpg';
+import ambitionImg from '../assets/ambition.jpg';
+
 const EXPERTISE_DETAILS = {
   "01": {
     title: "Conseil Juridique & Conformité",
     subtitle: "Sécuriser vos structures et vos opérations",
-    image: "/expertises.jpg",
+    image: expertisesImg,
     content: "Dans un environnement réglementaire en constante mutation, la conformité n'est plus une contrainte mais un levier de performance. Nous structurons vos organisations pour qu'elles soient résilientes et prêtes pour la croissance.",
     points: [
       "Structuration juridique des entreprises et des holdings",
@@ -22,7 +26,7 @@ const EXPERTISE_DETAILS = {
   "02": {
     title: "Gouvernance Stratégique",
     subtitle: "Piloter avec vision et responsabilité",
-    image: "/hero.jpg",
+    image: heroImg,
     content: "La gouvernance est le moteur de la pérennité. Nous aidons les dirigeants à bâtir des structures décisionnelles solides, éthiques et alignées sur les meilleurs standards internationaux.",
     points: [
       "Structuration des organes de gouvernance (CA, Comités)",
@@ -36,7 +40,7 @@ const EXPERTISE_DETAILS = {
   "03": {
     title: "Projets Innovants & Durables",
     desc: "Bâtir l'avenir sur des bases solides",
-    image: "/ambition.jpg",
+    image: ambitionImg,
     content: "L'innovation nécessite un cadre juridique agile et protecteur. Nous accompagnons les projets transformateurs qui façonnent l'économie de demain, en mettant l'accent sur la durabilité et l'impact.",
     points: [
       "Ingénierie juridique pour projets à fort impact social et environnemental",

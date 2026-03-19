@@ -18,7 +18,6 @@ export const TransparentImage: React.FC<TransparentImageProps> = ({
 
   useEffect(() => {
     const img = new Image();
-    img.crossOrigin = "anonymous";
     img.src = src;
     img.onload = () => {
       const canvas = canvasRef.current;
@@ -48,6 +47,10 @@ export const TransparentImage: React.FC<TransparentImageProps> = ({
       ctx.putImageData(imageData, 0, 0);
       setProcessedSrc(canvas.toDataURL());
     };
+    img.onerror = () => {
+      console.error(`Failed to load image: ${src}`);
+      setProcessedSrc(src); // Fallback to original src if processing fails
+    };
   }, [src, threshold]);
 
   return (
@@ -56,7 +59,7 @@ export const TransparentImage: React.FC<TransparentImageProps> = ({
       {processedSrc ? (
         <img src={processedSrc} alt={alt} className="w-full h-full object-contain" referrerPolicy="no-referrer" />
       ) : (
-        <img src={src} alt={alt} className="w-full h-full object-contain opacity-0" referrerPolicy="no-referrer" />
+        <img src={src} alt={alt} className="w-full h-full object-contain opacity-50" referrerPolicy="no-referrer" />
       )}
     </div>
   );
