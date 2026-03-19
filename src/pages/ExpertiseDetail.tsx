@@ -4,10 +4,10 @@ import { motion } from 'motion/react';
 import { ArrowLeft, Shield, Zap, Globe, CheckCircle2 } from 'lucide-react';
 import { Logo } from '../components/Logo';
 
-// Images replaced with Picsum for reliability
-const heroImg = "https://picsum.photos/seed/legal-meeting/1920/1080";
-const expertisesImg = "https://picsum.photos/seed/business-expertise/1200/800";
-const ambitionImg = "https://picsum.photos/seed/modern-architecture/1200/800";
+// Local assets
+import heroImg from '../assets/hero.jpg';
+import expertisesImg from '../assets/expertises.jpg';
+import ambitionImg from '../assets/ambition.jpg';
 
 const EXPERTISE_DETAILS = {
   "01": {
