@@ -20,9 +20,10 @@ import { Logo } from './components/Logo';
 import { ContactForm } from './components/ContactForm';
 import { ExpertiseDetail } from './pages/ExpertiseDetail';
 
-import heroImg from './assets/hero.jpg';
-import expertisesImg from './assets/expertises.jpg';
-import ambitionImg from './assets/ambition.jpg';
+// Images replaced with Picsum for reliability
+const heroImg = "https://picsum.photos/seed/legal-meeting/1920/1080";
+const expertisesImg = "https://picsum.photos/seed/business-expertise/1200/800";
+const ambitionImg = "https://picsum.photos/seed/modern-architecture/1200/800";
 
 const EXPERTISES = [
   {
@@ -169,6 +170,7 @@ const Home = () => {
                   src={heroImg} 
                   alt="Lexora Strategic Meeting" 
                   className="w-full h-[600px] object-cover"
+                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -bottom-10 -left-10 bg-paper p-8 shadow-xl hidden md:block border border-ocre/10">
@@ -230,6 +232,7 @@ const Home = () => {
                 src={expertisesImg} 
                 alt="Expertises" 
                 className="absolute inset-0 w-full h-full object-cover"
+                referrerPolicy="no-referrer"
               />
             </div>
           </div>
@@ -322,6 +325,7 @@ const Home = () => {
                   src={ambitionImg} 
                   alt="Lexora Ambition" 
                   className="w-full h-[500px] object-cover"
+                  referrerPolicy="no-referrer"
                 />
               </div>
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-ocre flex items-center justify-center rounded-full rotate-12">

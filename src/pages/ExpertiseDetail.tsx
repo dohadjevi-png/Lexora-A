@@ -4,9 +4,10 @@ import { motion } from 'motion/react';
 import { ArrowLeft, Shield, Zap, Globe, CheckCircle2 } from 'lucide-react';
 import { Logo } from '../components/Logo';
 
-import heroImg from '../assets/hero.jpg';
-import expertisesImg from '../assets/expertises.jpg';
-import ambitionImg from '../assets/ambition.jpg';
+// Images replaced with Picsum for reliability
+const heroImg = "https://picsum.photos/seed/legal-meeting/1920/1080";
+const expertisesImg = "https://picsum.photos/seed/business-expertise/1200/800";
+const ambitionImg = "https://picsum.photos/seed/modern-architecture/1200/800";
 
 const EXPERTISE_DETAILS = {
   "01": {
@@ -101,7 +102,12 @@ export const ExpertiseDetail: React.FC = () => {
             </div>
             <div className="relative">
               <div className="aspect-[4/5] overflow-hidden rounded-2xl">
-                <img src={detail.image} alt={detail.title} className="w-full h-full object-cover" />
+                <img 
+                  src={detail.image} 
+                  alt={detail.title} 
+                  className="w-full h-full object-cover" 
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-ocre rounded-full flex items-center justify-center rotate-12 hidden md:flex">
                 <Shield size={48} className="text-paper" />
