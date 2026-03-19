@@ -88,14 +88,14 @@ export const ExpertiseDetail: React.FC = () => {
               <div className="inline-block px-4 py-1 bg-emerald/10 text-emerald rounded-full text-[10px] font-bold uppercase tracking-widest mb-6">
                 Expertise {id}
               </div>
-              <h1 className="text-5xl md:text-7xl mb-8 leading-tight">
+              <h1 className="text-3xl md:text-5xl mb-8 leading-tight">
                 {detail.title.split(' & ').map((part, i) => (
                   <span key={i} className={i === 1 ? 'italic text-ocre block' : ''}>
                     {i === 1 ? `& ${part}` : part}
                   </span>
                 ))}
               </h1>
-              <p className="text-xl text-midnight/70 leading-relaxed mb-10">
+              <p className="text-base text-midnight/70 leading-relaxed mb-10">
                 {detail.content}
               </p>
             </div>
@@ -111,7 +111,7 @@ export const ExpertiseDetail: React.FC = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-midnight text-paper p-12 rounded-3xl">
-              <h3 className="text-3xl mb-10 italic">Domaines d'intervention</h3>
+              <h3 className="text-xl mb-10 italic">Domaines d'intervention</h3>
               <ul className="space-y-6">
                 {detail.points.map((point, i) => (
                   <motion.li 
@@ -122,14 +122,14 @@ export const ExpertiseDetail: React.FC = () => {
                     className="flex gap-4 items-start"
                   >
                     <CheckCircle2 className="text-emerald shrink-0 mt-1" size={20} />
-                    <span className="text-lg opacity-90">{point}</span>
+                    <span className="text-sm opacity-90">{point}</span>
                   </motion.li>
                 ))}
               </ul>
             </div>
             
             <div className="flex flex-col justify-center p-12 border border-midnight/10 rounded-3xl">
-              <h3 className="text-3xl mb-6">Pourquoi Lexora ?</h3>
+              <h3 className="text-xl mb-6">Pourquoi Lexora ?</h3>
               <p className="text-midnight/60 leading-relaxed mb-8">
                 Notre approche ne se limite pas à la simple conformité. Nous intégrons les enjeux business et stratégiques pour faire du droit un véritable moteur de croissance et de pérennité pour votre organisation.
               </p>

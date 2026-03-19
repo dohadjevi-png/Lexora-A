@@ -137,10 +137,10 @@ const Home = () => {
               <div className="inline-block px-4 py-1 border border-ocre/30 text-ocre text-xs font-bold uppercase tracking-[0.3em] mb-6">
                 Impact Durable & Excellence Africaine
               </div>
-              <h1 className="text-5xl md:text-7xl leading-[1.1] mb-8">
+              <h1 className="text-3xl md:text-5xl leading-[1.1] mb-8">
                 Partenaire de vos <span className="italic text-emerald">Décisions Stratégiques.</span> Sécuriser votre Expansion.
               </h1>
-              <p className="text-xl text-midnight/60 max-w-lg mb-10 leading-relaxed">
+              <p className="text-base text-midnight/60 max-w-lg mb-10 leading-relaxed">
                 Lexora redéfinit le conseil juridique en alliant rigueur internationale et compréhension profonde des marchés émergents.
               </p>
               <div className="flex flex-wrap gap-6">
@@ -188,8 +188,8 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
             <div className="max-w-2xl">
-              <h2 className="text-4xl md:text-5xl mb-6">Une Expertise <span className="italic">Multidimensionnelle</span></h2>
-              <p className="text-midnight/60 text-lg">Nous intervenons là où la complexité exige une vision claire et une exécution sans faille.</p>
+              <h2 className="text-2xl md:text-3xl mb-6">Une Expertise <span className="italic">Multidimensionnelle</span></h2>
+              <p className="text-midnight/60 text-sm">Nous intervenons là où la complexité exige une vision claire et une exécution sans faille.</p>
             </div>
             <div className="text-ocre font-bold text-sm uppercase tracking-widest">
               Nos Domaines d'Intervention
@@ -207,11 +207,11 @@ const Home = () => {
                   viewport={{ once: true }}
                   className="bg-paper p-12 hover-invert group"
                 >
-                  <span className="num-label block font-serif text-5xl italic mb-12 transition-colors duration-500">
+                  <span className="num-label block font-serif text-4xl italic mb-12 transition-colors duration-500">
                     {exp.num}
                   </span>
-                  <h3 className="text-2xl mb-6">{exp.title}</h3>
-                  <p className="text-midnight/60 group-hover:text-paper/70 transition-colors duration-500 leading-relaxed">
+                  <h3 className="text-xl mb-6">{exp.title}</h3>
+                  <p className="text-sm text-midnight/60 group-hover:text-paper/70 transition-colors duration-500 leading-relaxed">
                     {exp.desc}
                   </p>
                   <div className="mt-12 pt-8 border-t border-midnight/5 group-hover:border-paper/10">
@@ -240,8 +240,8 @@ const Home = () => {
       <section id="approche" className="py-32 overflow-hidden bg-paper">
         <div className="max-w-7xl mx-auto px-6">
           <div className="max-w-4xl mb-24">
-            <h2 className="text-4xl md:text-6xl mb-8">Notre Positionnement <span className="italic">Unique</span></h2>
-            <p className="text-2xl text-midnight/80 font-serif italic border-l-4 border-emerald pl-8">
+            <h2 className="text-2xl md:text-4xl mb-8">Notre Positionnement <span className="italic">Unique</span></h2>
+            <p className="text-lg text-midnight/80 font-serif italic border-l-4 border-emerald pl-8">
               "Nous ne résolvons pas seulement des problèmes juridiques : nous sécurisons des trajectoires de croissance."
             </p>
           </div>
@@ -296,18 +296,18 @@ const Home = () => {
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div>
-              <h2 className="text-4xl md:text-6xl mb-10 leading-tight">
+            <div className="lg:col-span-1">
+              <h2 className="text-2xl md:text-4xl mb-10 leading-tight">
                 L'Excellence au service de <span className="italic text-ocre">l'Impact.</span>
               </h2>
-              <blockquote className="text-2xl font-serif italic mb-12 border-l-4 border-ocre pl-8 py-2 text-paper/80">
+              <blockquote className="text-lg font-serif italic mb-12 border-l-4 border-ocre pl-8 py-2 text-paper/80">
                 "Devenir la référence du conseil juridique et stratégique au Bénin et en Afrique de l'Ouest, au service d'organisations qui refusent la médiocrité et choisissent l'excellence."
               </blockquote>
               
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
                 {STATS.map((stat) => (
                   <div key={stat.label}>
-                    <div className="text-4xl font-serif text-ocre mb-2">
+                    <div className="text-3xl font-serif text-ocre mb-2">
                       <Counter value={stat.value} suffix={stat.suffix} />
                     </div>
                     <div className="text-[10px] uppercase tracking-widest font-bold opacity-50">{stat.label}</div>
